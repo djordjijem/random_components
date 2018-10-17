@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+     <div class="container">
+          <div class="segmented-control js-segmented-control">
+               <div class="segmented-control__row">
+                    <button class="segmented-control__btn segmented-control__btn--active js-segmented-control__btn">Sort by price</button>
+                    <button class="segmented-control__btn js-segmented-control__btn">Sort by name</button>
+                    <button class="segmented-control__btn js-segmented-control__btn">Sort by relevance</button>
+               </div>
+     
+               <select class="segmented-control__select js-segmented-control__select">
+                   <option value="1">Sort by price</option>
+                   <option value="2">Sort by name</option>
+                   <option value="3">Sort by relevance</option>
+               </select>
+
+          </div><!--segmented-control-->
+
+          <div class="tab-index js-tab-index">
+               <div class="tab-index__row">
+                   <div class="tab-index__text">
+                        <input type="submit" placeholder="Enter tab index">
+                   </div>
+                   <button class="tab-index__btn">
+                       Change tab
+                   </button>       
+               </div>    
+               <div class="tab-index__row">
+                   <a href="" class="tab-index__vals tab-index__vals--active">POSITIVE</a>
+                   <a href="" class="tab-index__vals">NEGATIVE</a>
+                   <a href="" class="tab-index__vals">NEUTRAL</a>
+               </div>
+               <div class="tab-index__row">
+                   <div class="tab-index__current"></div>
+               </div>
+
+
+          </div><!--tab-index-->
+     </div><!--container-->
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
